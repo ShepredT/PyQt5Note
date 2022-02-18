@@ -1,0 +1,2160 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>item-types - Maze World Serve</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Maze World Serve" class="md-header__button md-logo" aria-label="Maze World Serve" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Maze World Serve
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              item-types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="切换夜间模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="切换夜间模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="切换明亮模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="切换明亮模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Maze World Serve" class="md-nav__button md-logo" aria-label="Maze World Serve" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Maze World Serve
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        主页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugins" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          MMOItems
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MMOItems" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          MMOItems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_1" type="checkbox" id="__nav_2_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_1">
+          Wiki
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Wiki" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Wiki
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../placeholders/" class="md-nav__link">
+        Placeholders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../permissions/" class="md-nav__link">
+        Permissions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../itemedit/" class="md-nav__link">
+        编辑界面汉化
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_2" type="checkbox" id="__nav_2_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_2">
+          crafting-stations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="crafting-stations" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          crafting-stations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crafting-stations/arcane-forge/" class="md-nav__link">
+        arcane-forge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crafting-stations/mythical-forge/" class="md-nav__link">
+        mythical-forge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crafting-stations/steel-crafting-station/" class="md-nav__link">
+        steel-crafting-station
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_3" type="checkbox" id="__nav_2_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_3">
+          language
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="language" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          language
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/abilities/" class="md-nav__link">
+        abilities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/attack-effects/" class="md-nav__link">
+        attack-effects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/crafting-stations/" class="md-nav__link">
+        crafting-stations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/items/" class="md-nav__link">
+        items
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/lore-format/" class="md-nav__link">
+        lore-format
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/messages/" class="md-nav__link">
+        messages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/potion-effects/" class="md-nav__link">
+        potion-effects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../language/stats/" class="md-nav__link">
+        stats
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_4" type="checkbox" id="__nav_2_1_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_4">
+          layouts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="layouts" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          layouts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/default/" class="md-nav__link">
+        default
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layouts/expanded/" class="md-nav__link">
+        expanded
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_5" type="checkbox" id="__nav_2_1_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_5">
+          modifiers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="modifiers" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          modifiers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modifiers/example-modifiers/" class="md-nav__link">
+        example-modifiers
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/" class="md-nav__link">
+        config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drops/" class="md-nav__link">
+        drops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gen-templates/" class="md-nav__link">
+        gen-templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item-sets/" class="md-nav__link">
+        item-sets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item-tiers/" class="md-nav__link">
+        item-tiers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        item-types
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade-templates/" class="md-nav__link">
+        upgrade-templates
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Civs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Civs" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Civs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" type="checkbox" id="__nav_2_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_1">
+          gov-types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="gov-types" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          gov-types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/anarchy/" class="md-nav__link">
+        anarchy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/capitalism/" class="md-nav__link">
+        capitalism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/colonialism/" class="md-nav__link">
+        colonialism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/communism/" class="md-nav__link">
+        communism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/cooperative/" class="md-nav__link">
+        cooperative
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/cybersynacy/" class="md-nav__link">
+        cybersynacy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/democracy/" class="md-nav__link">
+        democracy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/democratic_socialism/" class="md-nav__link">
+        democratic_socialism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/dictatorship/" class="md-nav__link">
+        dictatorship
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/disestablishment/" class="md-nav__link">
+        disestablishment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/feudalism/" class="md-nav__link">
+        feudalism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/idiocracy/" class="md-nav__link">
+        idiocracy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/kraterocracy/" class="md-nav__link">
+        kraterocracy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/libertarian/" class="md-nav__link">
+        libertarian
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/libertarian_socialism/" class="md-nav__link">
+        libertarian_socialism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/meritocracy/" class="md-nav__link">
+        meritocracy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/oligarchy/" class="md-nav__link">
+        oligarchy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/socialism/" class="md-nav__link">
+        socialism
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/gov-types/tribalism/" class="md-nav__link">
+        tribalism
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_2">
+          item-types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="item-types" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          item-types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2_1" type="checkbox" id="__nav_2_2_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_2_1">
+          admin-invisible
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="admin-invisible" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          admin-invisible
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/admin-invisible/admin_graveyard/" class="md-nav__link">
+        admin_graveyard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/admin-invisible/plot7x7/" class="md-nav__link">
+        plot7x7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/admin-invisible/plot11x11/" class="md-nav__link">
+        plot11x11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/admin-invisible/plot15x15/" class="md-nav__link">
+        plot15x15
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/admin-invisible/plot19x19/" class="md-nav__link">
+        plot19x19
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/admin-invisible/shelter/" class="md-nav__link">
+        shelter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2_2" type="checkbox" id="__nav_2_2_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_2_2">
+          shops
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="shops" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          shops
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2_2_1" type="checkbox" id="__nav_2_2_2_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_2_2_1">
+          trading
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="trading" data-md-level="5">
+        <label class="md-nav__title" for="__nav_2_2_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          trading
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/trading/jade_shop/" class="md-nav__link">
+        jade_shop
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/coal_shoop/" class="md-nav__link">
+        coal_shoop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/diamond_shop/" class="md-nav__link">
+        diamond_shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/flower_shop/" class="md-nav__link">
+        flower_shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/gold_shop/" class="md-nav__link">
+        gold_shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/gunpowder_shop/" class="md-nav__link">
+        gunpowder_shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/iron_shop/" class="md-nav__link">
+        iron_shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/lapis_shop/" class="md-nav__link">
+        lapis_shop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/item-types/shops/leather_shop/" class="md-nav__link">
+        leather_shop
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/block-data/" class="md-nav__link">
+        block-data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/config/" class="md-nav__link">
+        config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Civs/tutorial/" class="md-nav__link">
+        tutorial
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>item-types</h1>
+                
+                <div class="highlight"><pre><span></span><code><span class="c1"># Default item types. These cannot be removed. They</span>
+<span class="c1"># may be used as &#39;parents&#39; to create new item types</span>
+<span class="c1"># which will behave just like another item type. Parents</span>
+<span class="c1"># generate their own config file at /language/item_type.yml</span>
+
+<span class="c1"># Every item type has its template for unidentified items.</span>
+<span class="c1"># If you don&#39;t specify one like the default SWORD item type,</span>
+<span class="c1"># it will use the default (not translated) english one.</span>
+
+<span class="c1"># Used as reference when using /mmoitems commands</span>
+<span class="nt">SWORD</span><span class="p">:</span>
+
+    <span class="c1"># The display parameter is used to display the item in both</span>
+    <span class="c1"># the item brower and the recipe list when shifting a</span>
+    <span class="c1"># workbench. You can use durability for custom textures.</span>
+    <span class="c1"># In 1.14, durability is replaced by CustomModelData.</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_SWORD:0</span>
+
+    <span class="c1"># Name displayed in the item lore.</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;剑&#39;</span>
+
+    <span class="c1"># Template of an unidentified item.</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Sword&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">DAGGER</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">STONE_SWORD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;匕首&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Dagger&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">SPEAR</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TRIDENT</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;长枪&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Spear&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">HAMMER</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_AXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;锤&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Hammer&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">GAUNTLET</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_HORSE_ARMOR</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;拳套&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Gauntlet&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">WHIP</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">LEAD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;鞭&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Whip&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">STAFF</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DIAMOND_HOE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;法杖&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Staff&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">BOW</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BOW</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;弓&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Bow&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">CROSSBOW</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">WOODEN_PICKAXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;弩&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Crossbow&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">MUSKET</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_HORSE_ARMOR</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;火枪&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Musket&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">LUTE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">NAME_TAG</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;鲁特琴&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Lute&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">CATALYST</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PRISMARINE_SHARD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;催化剂&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Catalyst&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">OFF_CATALYST</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PRISMARINE_CRYSTALS</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;副手催化剂&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Offhand</span><span class="nv"> </span><span class="s">Catalyst&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">ORNAMENT</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GOLD_NUGGET</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;饰品&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Ornament&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">ACCESSORY</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DIAMOND</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;辅助物品&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Accessory&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7该物品未鉴定&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7鉴定过使用,否则无法使用&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8物品信息:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7等级范围:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7物品品质:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">ARMOR</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_CHESTPLATE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;防具&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Armor&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">TOOL</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_PICKAXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;工具&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Tool&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">CONSUMABLE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">APPLE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;消耗品&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Consumable&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">MISCELLANEOUS</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">WATER_BUCKET</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;杂项&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Misc</span><span class="nv"> </span><span class="s">Item&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">SKIN</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">LEATHER</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;外观&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Skin</span><span class="nv"> </span><span class="s">Item&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">GEM_STONE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">EMERALD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;宝石&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Gem&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">BLOCK</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">STONE:0</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;方块&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Block&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+
+<span class="c1"># Default subtypes</span>
+<span class="nt">GREATSWORD</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DIAMOND_SWORD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;巨剑&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SWORD&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Greatsword&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">LONG_SWORD</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">STONE_SWORD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;长剑&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SWORD&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Long</span><span class="nv"> </span><span class="s">Sword&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">KATANA</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_SWORD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;武士刀&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SWORD&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Katana&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">THRUSTING_SWORD</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GOLDEN_SWORD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;细剑&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;DAGGER&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Thrusting</span><span class="nv"> </span><span class="s">Dagger&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">AXE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">STONE_AXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;斧头&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SWORD&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Axe&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">GREATAXE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DIAMOND_AXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;巨斧&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SWORD&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Greataxe&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">HALBERD</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_AXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;战戟&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SWORD&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Halberd&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">LANCE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">STICK</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;矛&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;SPEAR&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Lance&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">GREATHAMMER</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DIAMOND_AXE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;巨锤&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;HAMMER&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Greathammer&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">GREATSTAFF</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DIAMOND_HOE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;双持法杖&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;HAMMER&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Greatstaff&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">STAVE</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">IRON_HOE</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;Stave&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;HAMMER&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Stave&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">TOME</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BOOK</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;Tome&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;CATALYST&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Tome&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">TALISMAN</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TOTEM_OF_UNDYING</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;护符&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;CATALYST&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Talisman&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">WAND</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">STICK</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;法棒&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;STAFF&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Wand&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">GREATBOW</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BOW</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;双持弓&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;BOW&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Greatbow&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">SHIELD</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">SHIELD</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;盾&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CATALYST</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Shield&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+
+<span class="nt">MATERIAL</span><span class="p">:</span>
+    <span class="nt">display</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PAPER</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;材料&#39;</span>
+    <span class="nt">parent</span><span class="p">:</span> <span class="s">&#39;MISCELLANEOUS&#39;</span>
+    <span class="nt">unident-item</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;&amp;f#prefix#Unidentified</span><span class="nv"> </span><span class="s">Material&#39;</span>
+        <span class="nt">lore</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">unidentified.</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">must&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7find</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">way</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">it!&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8Item</span><span class="nv"> </span><span class="s">Info:&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{range}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Lvl</span><span class="nv"> </span><span class="s">Range:</span><span class="nv"> </span><span class="s">&amp;e#range#&#39;</span>
+        <span class="p p-Indicator">-</span> <span class="s">&#39;{tier}&amp;8-</span><span class="nv"> </span><span class="s">&amp;7Item</span><span class="nv"> </span><span class="s">Tier:</span><span class="nv"> </span><span class="s">#prefix##tier#&#39;</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../item-tiers/" class="md-footer__link md-footer__link--prev" aria-label="上一页: item-tiers" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              item-tiers
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../upgrade-templates/" class="md-footer__link md-footer__link--next" aria-label="下一页: upgrade-templates" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              upgrade-templates
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
